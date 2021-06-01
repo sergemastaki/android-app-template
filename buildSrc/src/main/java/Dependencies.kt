@@ -1,7 +1,8 @@
+package com.yvkalume.buildsrc
 object Dependencies {
 
     object Kotlin {
-        const val core = "androidx.core:core-ktx:${Version.kotlinCoreKtx}"
+        const val coreKtx = "androidx.core:core-ktx:${Version.kotlinCoreKtx}"
         const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib:${Version.kotlin}"
     }
 
@@ -72,12 +73,9 @@ object Dependencies {
         }
 
         object Test {
-            const val junit = "junit:junit:4.12"
+            const val junit = "junit:junit:4.13.2"
             const val ext = "androidx.test.ext:junit:1.1.2"
-            object Espresso {
-                private const val version = "3.3.0"
-                const val core = "androidx.test.espresso:espresso-core:$version"
-            }
+            const val espressoCore = "androidx.test.espresso:espresso-core:3.3.0"
         }
     }
 

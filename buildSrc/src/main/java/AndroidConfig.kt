@@ -1,8 +1,7 @@
 object AndroidConfig {
-    const val applicationId = "com.yvkalume.app"
+    const val applicationId = "com.yvkalume.template"
     const val compileSdkVersion = 30
-    const val buildToolsVersion = "30.0.2"
-    const val minSdkVersion = 21
+    const val buildToolsVersion = "30.0.3"
+    const val minSdkVersion = 22
     const val targetSdkVersion = 30
-    const val jvmTarget = "1.8"
 }
