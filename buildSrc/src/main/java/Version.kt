@@ -5,6 +5,11 @@ object Version {
     const val hilt = "2.33-beta"
     const val navigation = "2.3.4"
 
+    const val appCompat = "1.3.0"
+    const val material = "1.3.0"
+    const val constraintLayout = "2.0.4"
+    const val legacy = "1.0.0"
+
     const val mvrx = "2.0.0-beta1"
     const val epoxy = "4.3.1"
     const val retrofit = "2.9.0"
@@ -16,4 +21,6 @@ object Version {
     const val coroutines = "1.3.9"
 
     const val workManager = "2.5.0"
+
+    const val viewPager = "1.0.0"
 }

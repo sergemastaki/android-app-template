@@ -59,12 +59,11 @@ object Dependencies {
     }
 
     object AndroidX {
-        const val appcompat = "androidx.appcompat:appcompat:1.2.0"
-        const val legacy = "androidx.legacy:legacy-support-v4:1.0.0"
-        const val constraintLayout = "androidx.constraintlayout:constraintlayout:2.0.4"
-        const val material = "com.google.android.material:material:1.3.0"
-        const val viewpager = "androidx.viewpager2:viewpager2:1.0.0"
-        const val startup = "androidx.startup:startup-runtime:1.0.0-beta01"
+        const val appcompat = "androidx.appcompat:appcompat:${Version.appCompat}"
+        const val legacy = "androidx.legacy:legacy-support-v4:${Version.legacy}"
+        const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Version.constraintLayout}"
+        const val material = "com.google.android.material:material:${Version.material}"
+        const val viewpager = "androidx.viewpager2:viewpager2:${Version.viewPager}"
 
         object Navigation {
             const val fragment = "androidx.navigation:navigation-fragment-ktx:${Version.navigation}"
