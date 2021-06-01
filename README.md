@@ -1,4 +1,6 @@
-# android-app-template
+# Android app template
+
+[![Kotlin Version](https://img.shields.io/badge/kotlin-1.4.30-blue.svg)](http://kotlinlang.org/)
 
 An Android project template, written completely in Kotlin, to help you kick start your next Android project in seconds.
 
