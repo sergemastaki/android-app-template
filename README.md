@@ -16,6 +16,6 @@ Once created don't forget to update the:
 -   **`buildSrc` —** contains all the objects that allow to manage dependencies, plugins and other information of the application in order to avoid redundancy in the `build.gradle.kts` files.
 ### Principle
 The general principle is to use a basic **3 tiers architecture** respecting the unidirectional **_Dependency Rule_.** This rule specifies that each circle can depend only on the nearest inward circle.
-The `core-domain`module shouldn't now about any other module, `core-data`depends only on `core-domain` module and `app` depends on `core-domain`module and use **usecase** classes from viewmodels or presenters to perform actions.
+The `core-domain`module shouldn't now about any other module, `core-data`depends only on `core-domain` module and `app` depends on both `core-domain` and `core-data`, it uses **usecase** classes from viewmodels or presenters to perform actions.
 To make it run you should use dependency injection framework.
 
