@@ -13,7 +13,7 @@ Once created don't forget to update the:
 -   **`app` —** contains all the code related to the Presentation layer and all the things from Android SDK (the activity, fragments and viewmodel, services, etc.)
 -   **`core-domain` —**  contains all the application’s business logic : entities, use cases and abstract representation of repositories(interfaces). This shouldn’t depend on anything from the **_app_** or **_core-data_** module and should also be independent of any framework.
 -   **`core-data` —** contains concrete implementations of repositories and other data sources like databases or network, split into corresponding packages.
--   **`buildSrc` —** contains all the objects that allow to manage dependencies, plugins and other information of the application in order to avoid redundancy in the `build.gradle.kts` files.
+-   **`buildSrc` —** contains all the objects with Gradle Kotlin DSL that allow to manage dependencies, plugins and other information of the application in order to avoid redundancy in the `build.gradle.kts` files.
 ### Principle
 The general principle is to use a basic **3 tiers architecture** respecting the unidirectional **_Dependency Rule_.** This rule specifies that each circle can depend only on the nearest inward circle.
 The `core-domain`module shouldn't now about any other module, `core-data`depends only on `core-domain` module and `app` depends on both `core-domain` and `core-data`, it uses **usecase** classes from viewmodels or presenters to perform actions.
