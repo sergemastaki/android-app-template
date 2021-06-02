@@ -1,4 +1,5 @@
 package com.yvkalume.buildsrc
+
 object Dependencies {
 
     object Kotlin {
@@ -9,6 +10,13 @@ object Dependencies {
     object GooglePlayService {
         const val core = "com.google.android.play:core-ktx:1.8.1"
         const val auth = "com.google.android.gms:play-services-auth:19.0.0"
+    }
+
+    object Lifecycle {
+        const val viewmodel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Version.lyfecycle}"
+        const val livedata = "androidx.lifecycle:lifecycle-livedata-ktx:${Version.lyfecycle}"
+        const val lifecycleOnly = "androidx.lifecycle:lifecycle-viewmodel-savedstate:${Version.lyfecycle}"
+        const val annotationProcessor = "androidx.lifecycle:lifecycle-compiler:${Version.lyfecycle}"
     }
 
     object Firebase {

@@ -1,9 +1,11 @@
+import com.yvkalume.buildsrc.Dependencies
 import com.yvkalume.buildsrc.Dependencies.AndroidX
 import com.yvkalume.buildsrc.Dependencies.Kotlin
 
 plugins {
     id("com.android.library")
     id("kotlin-android")
+    id("kotlin-kapt")
 }
 
 android {
@@ -39,6 +41,10 @@ android {
 dependencies {
     implementation(Kotlin.stdlib)
     implementation(Kotlin.coreKtx)
+
+    implementation(Dependencies.Lifecycle.livedata)
+    kapt(Dependencies.Lifecycle.annotationProcessor)
+
     testImplementation(AndroidX.Test.junit)
     androidTestImplementation(AndroidX.Test.ext)
     androidTestImplementation(AndroidX.Test.espressoCore)
