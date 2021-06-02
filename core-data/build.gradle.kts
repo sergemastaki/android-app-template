@@ -35,6 +35,9 @@ android {
 }
 
 dependencies {
+    implementation(project(Module.domain))
+    implementation(project(Module.util))
+
     implementation(Dependencies.Kotlin.stdlib)
     implementation(Dependencies.Kotlin.coreKtx)
     testImplementation(Dependencies.AndroidX.Test.junit)

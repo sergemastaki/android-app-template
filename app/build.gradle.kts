@@ -37,6 +37,10 @@ android {
 
 dependencies {
 
+    implementation(project(Module.domain))
+    implementation(project(Module.data))
+    implementation(project(Module.util))
+
     implementation(Kotlin.stdlib)
     implementation(Kotlin.coreKtx)
     implementation(AndroidX.appcompat)

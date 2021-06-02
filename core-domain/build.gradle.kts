@@ -38,6 +38,8 @@ android {
 }
 
 dependencies {
+    implementation(project(java.lang.Module.util))
+
     implementation(Kotlin.stdlib)
     implementation(Kotlin.coreKtx)
     testImplementation(AndroidX.Test.junit)
